@@ -253,14 +253,7 @@ return [
             'icon'        => 'far fa-fw fa-user',
             'label'       => null,
             'label_color' => 'success',
-        ],
-        [
-            'text'        => 'Mapa',
-            'url'         => 'map',
-            'icon'        => 'far fa-fw fa-map',
-            'label'       => null,
-            'label_color' => 'success',
-        ],
+        ]
     ],
 
     /*
