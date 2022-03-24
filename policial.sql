@@ -974,20 +974,7 @@ INSERT INTO `agentes` (`id`, `nomina`, `nombre`, `asignacion`, `ingreso`, `nds`,
 
 -- --------------------------------------------------------
 
-INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(5, '2022_03_24_023758_create_agentes_table', 2);
-
--- --------------------------------------------------------
-
 --
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Perro', 'perro@gato.com', NULL, '$2y$10$9S/X65S4XIUh0XN/XHOJauAYX0EOHk.2gKr.mUcVpi01h.V1HZMvi', NULL, '2022-03-24 08:43:12', '2022-03-24 08:43:12'),
 (2, 'Nombre', 'correo@correo.com', NULL, '$2y$10$hacbaLYVeswXPebhKFA.R.NMTTcVQ3zl8pdRi7Ov8lhiojWysol5u', NULL, '2022-03-24 09:08:19', '2022-03-24 09:08:19');
-
---
--- Índices para tablas volcadas
---
