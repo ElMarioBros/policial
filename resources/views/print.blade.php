@@ -222,7 +222,7 @@
     </div>
     <script>
         window.print();
-        window.location.href = "http://127.0.0.1:8000/credential/1";
+        window.location.href = "raut.cc/credential/1";
     </script>
 </body>
 </html>
