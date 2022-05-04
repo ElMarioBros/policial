@@ -213,7 +213,7 @@
                     <p class="quote mx-4 fw-bold">Vigilar por quien vigila nuestra comunidad... ¡MISIÓN CUMPLIDA!</p>
                 </div>
                 <div class="flex-shrink footer-div box-b">
-                    <img class="qr mx-4 float-end" src="https://via.placeholder.com/200C/">
+                    <img class="qr mx-4 float-end" src="https://i.ibb.co/n6MKFf9/qr-code-512.png">
                 </div>
             </div>
 
