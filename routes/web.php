@@ -18,6 +18,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/credential/{id}', [App\Http\Controllers\HomeController::class, 'credential'])->name('credential');
+Route::get('/print/{id}', [App\Http\Controllers\HomeController::class, 'print'])->name('print');
 
 Route::get('/map', [App\Http\Controllers\HomeController::class, 'map'])->name('map');
 

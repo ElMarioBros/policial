@@ -35,4 +35,16 @@ class HomeController extends Controller
         return view('map');
     }
 
+    public function credential($id)
+    {
+        $agente = Agentes::find($id);
+        return view('credential',['agente'=>$agente]);
+    }
+
+    public function print($id)
+    {
+        $agente = Agentes::find($id);
+        return view('print',['agente'=>$agente]);
+    }
+
 }
