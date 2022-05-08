@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/credential/{id}', [App\Http\Controllers\HomeController::class, 'credential'])->name('credential');
-Route::get('/print/{id}', [App\Http\Controllers\HomeController::class, 'print'])->name('print');
+Route::controller(HomeController::class)->group(function(){
+    Route::get('/home', 'index')->name('home');
+    Route::get('/register', 'store')->name('store-agent');
+    Route::get('/print/{id}', 'print')->name('print');    
+    Route::get('/credential/{id}',  'credential')->name('credential');
+});
 
-Route::get('/map', [App\Http\Controllers\HomeController::class, 'map'])->name('map');
+/*
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/credential/{id}', [HomeController::class, 'credential'])->name('credential');
+Route::get('/print/{id}', [HomeController::class, 'print'])->name('print');
+
+Route::get('/map', [HomeController::class, 'map'])->name('map');
+*/
 

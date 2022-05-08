@@ -47,4 +47,16 @@ class HomeController extends Controller
         return view('print',['agente'=>$agente]);
     }
 
+    public function store(Request $request)
+    {
+        $request->validate([
+            "name"=>"required|min:3"
+        ]);
+
+        $agente = new Agentes;
+        $agente->name = $request->name;
+        $agente->save();
+
+        return redirect()->route('form')->with('success','Tarea insertada exitosamente');
+    }
 }
