@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('asignacion');
             $table->string('ingreso');
             $table->string('nds');
+            $table->string('curp');
             $table->string('telefonos');
             $table->string('beneficiarios');
             $table->timestamps();

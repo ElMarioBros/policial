@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+       // $this->middleware('auth');
     }
 
     /**
@@ -50,13 +50,28 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            "name"=>"required|min:3"
+            "nomina"=>"",
+            "nombre"=>"",
+            "asignacion"=>"",
+            "ingreso"=>"",
+            "nds"=>"",
+            "curp"=>"",
+            "telefonos"=>"",
+            "beneficiarios"=>""
         ]);
 
         $agente = new Agentes;
-        $agente->name = $request->name;
+        $agente->nomina = $request->nomina;
+        $agente->nombre = $request->nombre;
+        $agente->asignacion = $request->asignacion;
+        $agente->ingreso = $request->ingreso;
+        $agente->nds = $request->nds;
+        $agente->curp = $request->curp;
+        $agente->telefonos = $request->telefonos;
+        $agente->beneficiarios = $request->beneficiarios;
+
         $agente->save();
 
-        return redirect()->route('form')->with('success','Tarea insertada exitosamente');
+        return redirect()->route('register')->with('success','Agente registrado exitosamente');
     }
 }

@@ -20,8 +20,11 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::controller(HomeController::class)->group(function(){
     Route::get('/home', 'index')->name('home');
-    Route::get('/register', 'store')->name('store-agent');
-    Route::get('/print/{id}', 'print')->name('print');    
+    Route::get('/register', function(){
+        return view('register');
+    })->name('register');
+    Route::post('/register', 'store')->name('store-agent');
+    Route::get('/print/{id}', 'print')->name('print');
     Route::get('/credential/{id}',  'credential')->name('credential');
 });
 

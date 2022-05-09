@@ -3,27 +3,62 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Agregar Agente</h1>
 @stop
 
 @section('content')
+<div class="container w-50">
+    @if (session('success'))
+        <div class="alert alert-success m-3">
+            {{ session('success') }}
+        </div>
+    @endif
+    <form class="pb-4" action="{{ route('store-agent') }}" method="POST">
+        @csrf
+        <div class="mb-3">
+            <label for="nomina" class="form-label">Número de nómina</label>
+            <input type="text" class="form-control" id="nomina" name="nomina">
+        </div>
 
-    <form>
         <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+
+        <div class="mb-3">
+            <label for="asignacion" class="form-label">Asignación</label>
+            <input type="text" class="form-control" id="asignacion" name="asignacion">
+        </div>
+
+        <div class="mb-3">
+            <label for="ingreso" class="form-label">Ingreso</label>
+            <input type="date" class="form-control" id="ingreso" name="ingreso"> 
+        </div>
+
+        <div class="mb-3">
+            <label for="nds" class="form-label">Número de seguro</label>
+            <input type="text" class="form-control" id="nds" name="nds">
+        </div>
+
+        <div class="mb-3">
+            <label for="curp" class="form-label">CURP</label>
+            <input type="text" class="form-control" id="curp" name="curp"> 
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="telefono" name="telefonos">
+        </div>
+
+        <div class="mb-3">
+            <label for="beneficiarios" class="form-label">Beneficiarios</label>
+            <textarea class="form-control" id="beneficiarios" name="beneficiarios"></textarea>
         </div>
         <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="submit" value="Registrar">
         </div>
-        <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+</div>
 
 @stop
 
