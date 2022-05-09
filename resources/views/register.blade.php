@@ -39,12 +39,12 @@
             <label for="nds" class="form-label">Número de seguro</label>
             <input type="text" class="form-control" id="nds" name="nds">
         </div>
-
+<!--
         <div class="mb-3">
             <label for="curp" class="form-label">CURP</label>
             <input type="text" class="form-control" id="curp" name="curp"> 
         </div>
-
+--> 
         <div class="mb-3">
             <label for="telefono" class="form-label">Telefono</label>
             <input type="text" class="form-control" id="telefono" name="telefonos">

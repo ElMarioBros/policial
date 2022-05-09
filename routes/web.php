@@ -22,7 +22,7 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/home', 'index')->name('home');
     Route::get('/store', function(){
         return view('register');
-    })->name('register');
+    })->name('store');
     Route::post('/store', 'store')->name('store-agent');
     Route::get('/print/{id}', 'print')->name('print');
     Route::get('/credential/{id}',  'credential')->name('credential');

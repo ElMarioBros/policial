@@ -56,12 +56,12 @@ class HomeController extends Controller
         $agente->asignacion = $request->asignacion;
         $agente->ingreso = $request->ingreso;
         $agente->nds = $request->nds;
-        $agente->curp = $request->curp;
+        //$agente->curp = $request->curp;
         $agente->telefonos = $request->telefonos;
         $agente->beneficiarios = $request->beneficiarios;
 
         $agente->save();
 
-        return redirect()->route('register')->with('success','Agente registrado exitosamente');
+        return redirect()->route('store')->with('success','Agente registrado exitosamente');
     }
 }
