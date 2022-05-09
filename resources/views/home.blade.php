@@ -13,7 +13,7 @@
         <div class="col-12">
             <ul class="nav mx-3 mb-2">
                 <li class="nav-item mx-1">
-                    <a class="btn btn-primary" href="/register">
+                    <a class="btn btn-primary" href="/store">
                         <span class="mx-4">Agregar Agente</span>
                         <i class="fa fa-fw fa-user-plus"></i> 
                     </a>

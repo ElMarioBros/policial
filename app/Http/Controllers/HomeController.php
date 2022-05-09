@@ -49,16 +49,6 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            "nomina"=>"",
-            "nombre"=>"",
-            "asignacion"=>"",
-            "ingreso"=>"",
-            "nds"=>"",
-            "curp"=>"",
-            "telefonos"=>"",
-            "beneficiarios"=>""
-        ]);
 
         $agente = new Agentes;
         $agente->nomina = $request->nomina;
