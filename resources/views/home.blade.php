@@ -31,8 +31,8 @@
                             <th>Asignación</th>
                             <th>Ingreso</th>
                             <th>CURP</th>
-                            <th>Telefonos</th>
                             <th>Cargo</th>
+                            <th>Telefonos</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -58,9 +58,12 @@
                     <tfoot>
                         <tr>
                             <th>Nómina</th>
+                            <th>CUIP</th>
                             <th>Nombre</th>
                             <th>Asignación</th>
                             <th>Ingreso</th>
+                            <th>CURP</th>
+                            <th>Cargo</th>
                             <th>Telefonos</th>
                             <th>Acciones</th>
                         </tr>
