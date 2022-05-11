@@ -10,7 +10,7 @@
 <div class="container w-50">
     @if (session('success'))
         <div class="alert alert-success m-3">
-            {{ session('success') }}
+            {{ session('success') }} <a href="{{ route('home') }}">Volver a la tabla</a>
         </div>
     @endif
     <form class="pb-4" action="{{ route('store-agent') }}" method="POST">
@@ -39,12 +39,10 @@
             <label for="nds" class="form-label">Número de seguro</label>
             <input type="text" class="form-control" id="nds" name="nds">
         </div>
-<!--
         <div class="mb-3">
             <label for="curp" class="form-label">CURP</label>
             <input type="text" class="form-control" id="curp" name="curp"> 
         </div>
---> 
         <div class="mb-3">
             <label for="telefono" class="form-label">Telefono</label>
             <input type="text" class="form-control" id="telefono" name="telefonos">
@@ -55,7 +53,7 @@
             <textarea class="form-control" id="beneficiarios" name="beneficiarios"></textarea>
         </div>
         <div class="mb-3">
-            <input type="submit" value="Registrar">
+            <input class="btn btn-primary" type="submit" value="Registrar">
         </div>
     </form>
 </div>

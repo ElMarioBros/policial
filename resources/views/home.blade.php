@@ -29,6 +29,7 @@
                             <th>Nombre</th>
                             <th>Asignación</th>
                             <th>Ingreso</th>
+                            <th>CURP</th>
                             <th>Telefonos</th>
                             <th>Acciones</th>
                         </tr>
@@ -40,6 +41,7 @@
                                 <td>{{ $agente->nombre }}</td>
                                 <td>{{ $agente->asignacion }}</td>
                                 <td>{{ $agente->ingreso }}</td>
+                                <td>{{ $agente->curp }}</td>
                                 <td>{{ $agente->telefonos }}</td>
                                 <td>
                                     <a class="btn btn-primary" href="{{ url("credential/$agente->id") }}">
@@ -79,7 +81,25 @@
 <script>
 $(document).ready(function() {
     $('#agentes').DataTable( {
-        "order": [[ 3, "desc" ]]
+        "order": [[ 3, "desc" ]],
+        language: {
+            "loadingRecords": "Cargando...",
+            "paginate": {
+                "first": "Primero",
+                "last": "Último",
+                "next": "Siguiente",
+                "previous": "Anterior"
+            },
+            "processing": "Procesando...",
+            "search": "Buscar:",
+            "decimal": ".",
+            "emptyTable": "No hay datos disponibles en la tabla",
+            "zeroRecords": "No se encontraron coincidencias",
+            "info": "Mostrando de _START_ a _END_ de _TOTAL_ entradas",
+            "infoEmpty": "Mostrando 0 a 0 de 0 entradas",
+            "infoFiltered": "(Filtrado de un total de _MAX_ entradas)",
+            "lengthMenu": "Mostrar _MENU_ entradas",
+        }  
     } );
 } );
 
