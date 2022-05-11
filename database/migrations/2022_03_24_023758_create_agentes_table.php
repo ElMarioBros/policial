@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('agentes', function (Blueprint $table) {
             $table->id();
             $table->string('nomina');
+            $table->string('cuip');
+            $table->string('cargo');
             $table->string('nombre');
             $table->string('asignacion');
             $table->string('ingreso');

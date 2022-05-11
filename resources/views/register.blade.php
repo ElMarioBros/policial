@@ -21,6 +21,16 @@
         </div>
 
         <div class="mb-3">
+            <label for="cuip" class="form-label">CUIP</label>
+            <input type="text" class="form-control" id="cuip" name="cuip"> 
+        </div>
+
+        <div class="mb-3">
+            <label for="cargo" class="form-label">Cargo</label>
+            <input type="text" class="form-control" id="cargo" name="cargo"> 
+        </div>
+
+        <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre">
         </div>

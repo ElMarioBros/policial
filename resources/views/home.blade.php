@@ -26,11 +26,13 @@
                     <thead>
                         <tr>
                             <th>Nómina</th>
+                            <th>CUIP</th>
                             <th>Nombre</th>
                             <th>Asignación</th>
                             <th>Ingreso</th>
                             <th>CURP</th>
                             <th>Telefonos</th>
+                            <th>Cargo</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -38,10 +40,12 @@
                         @foreach ($agentes as $agente)
                             <tr>
                                 <td>{{ $agente->nomina }}</td>
+                                <td>{{ $agente->cuip }}</td>
                                 <td>{{ $agente->nombre }}</td>
                                 <td>{{ $agente->asignacion }}</td>
                                 <td>{{ $agente->ingreso }}</td>
                                 <td>{{ $agente->curp }}</td>
+                                <th>{{ $agente->cargo }}</th>
                                 <td>{{ $agente->telefonos }}</td>
                                 <td>
                                     <a class="btn btn-primary" href="{{ url("credential/$agente->id") }}">

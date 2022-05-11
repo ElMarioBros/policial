@@ -52,6 +52,8 @@ class HomeController extends Controller
 
         $agente = new Agentes;
         $agente->nomina = $request->nomina;
+        $agente->cuip = $request->cuip;
+        $agente->cargo =$request->cargo;
         $agente->nombre = $request->nombre;
         $agente->asignacion = $request->asignacion;
         $agente->ingreso = $request->ingreso;
