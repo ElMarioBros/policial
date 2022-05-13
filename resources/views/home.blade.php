@@ -88,7 +88,7 @@
 <script>
 $(document).ready(function() {
     $('#agentes').DataTable( {
-        "order": [[ 3, "desc" ]],
+        "order": [[ 0, "desc" ]],
         language: {
             "loadingRecords": "Cargando...",
             "paginate": {
