@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('curp');
             $table->string('telefonos');
             $table->string('beneficiarios');
+            $table->string('imagen');
+            $table->string('misc');
             $table->timestamps();
         });
     }
