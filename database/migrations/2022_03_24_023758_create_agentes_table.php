@@ -15,18 +15,18 @@ return new class extends Migration
     {
         Schema::create('agentes', function (Blueprint $table) {
             $table->id();
-            $table->string('nomina');
-            $table->string('cuip');
-            $table->string('cargo');
-            $table->string('nombre');
-            $table->string('asignacion');
-            $table->string('ingreso');
-            $table->string('nds');
-            $table->string('curp');
-            $table->string('telefonos');
-            $table->string('beneficiarios');
-            $table->string('imagen');
-            $table->string('misc');
+            $table->string('nomina')->default(' ');
+            $table->string('cuip')->default(' ');
+            $table->string('cargo')->default(' ');
+            $table->string('nombre')->default(' ');
+            $table->string('asignacion')->default(' ');
+            $table->string('ingreso')->default(' ');
+            $table->string('nds')->default(' ');
+            $table->string('curp')->default(' ');
+            $table->string('telefonos')->default(' ');
+            $table->string('beneficiarios')->default(' ');
+            $table->string('imagen')->default(' ');
+            $table->string('misc')->default(' ');
             $table->timestamps();
         });
     }
