@@ -66,4 +66,25 @@ class HomeController extends Controller
 
         return redirect()->route('store')->with('success','Agente registrado exitosamente. ');
     }
+
+    public function upload($id)
+    {
+        $agente = Agentes::find($id);
+        return view('upload',['agente'=>$agente]);
+    }
+
+    public function saveImage(Request $request)
+    {
+        $request->validate([
+            'id'=>'required',
+            'file'=>'required|image'
+        ]);
+        $agente = Agentes::find($request->id);
+
+        $agente->imagen = $request->file('file')->store('');;
+        
+        $agente->save();
+        return $agente->imagen;
+    }
+
 }

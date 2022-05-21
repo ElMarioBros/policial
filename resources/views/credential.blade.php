@@ -70,9 +70,10 @@
 <div class="team-boxed">
     <div class="container">
         <a href="{{ url("print/$agente->id") }}" class="btn btn-primary">Imprimir frente <i class="fa fa-fw fa-print"></i></a>
+        <a href="{{ url("upload/$agente->id") }}" class="btn btn-success">Asignar Imagen <i class="fa fa-fw fa-camera"></i></a>
         <div class="row people">
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="https://via.placeholder.com/200C/">
+                <div class="box"><img class="rounded-circle" src="{{ asset('/storage/'.$agente->imagen) }}">
                     <h3 class="name">{{ $agente->nombre }}</h3>
                     <p class="title">{{ $agente->asignacion }}</p>
                 </div>

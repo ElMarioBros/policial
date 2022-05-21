@@ -51,6 +51,9 @@
                                     <a class="btn btn-primary" href="{{ url("credential/$agente->id") }}">
                                         <i class="far fa-fw fa-id-badge"></i>
                                     </a>
+                                    <a class="btn btn-success" href="{{ url("upload/$agente->id") }}">
+                                        <i class="fa fa-fw fa-camera"></i>
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach
