@@ -32,8 +32,7 @@
             {{ session('success') }} <a href="{{ route('home') }}">Volver a la tabla</a>
           </p>
         @endif
-        <a href="#" class="btn btn-primary">Imprimir Credencial <i class="fa fa-fw fa-print"></i></a>
-        <!--<a href="{ url("print/$agente->id") }" class="btn btn-primary">Imprimir Credencial <i class="fa fa-fw fa-print"></i></a>-->
+        <a href="{{ url("print/$agente->id") }}" class="btn btn-primary">Imprimir Credencial <i class="fa fa-fw fa-print"></i></a>
         <a href="{{ url("upload/$agente->id") }}" class="btn btn-success">Asignar Imagen <i class="fa fa-fw fa-camera"></i></a>
         <div class="row people">
             <div class="item">
