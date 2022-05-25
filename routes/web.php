@@ -28,7 +28,8 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/credential/{id}',  'credential')->name('credential');
     Route::get('/upload/{id}', 'upload')->name('upload-index');
     Route::post('/save', 'saveImage')->name('upload-image');
-
+    Route::get('/edit/{id}', 'editView')->name('edit-index');
+    Route::post('/edit/{id}', 'editAgent')->name('edit-agent');
 });
 
 /*

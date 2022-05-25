@@ -1,0 +1,89 @@
+.font-back {
+    height: 85.60mm;
+    width: 53.98mm;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    background: linear-gradient(190deg, rgba(252,252,252),50%, rgba(193,214,197), rgba(147,187,153), rgba(32,122,110), rgba(35,124,130), rgba(36,128,149));
+}
+
+.logo-fraternidad {
+    color: black;
+    font-size: 9px;
+}
+
+.logo-fraternidad img {
+    position: absolute;
+    object-fit: content;
+    height: 130px;
+    width: 110px;
+    top: 10px;
+    left: 20px;
+}
+
+.edetails-back {
+    position: absolute;
+    top: 145px;
+    left: 30px;
+    color: black;
+    font-size: 6px;
+    text-align: left;
+}
+
+.edetails-back p{
+    color: black;
+    margin: 0;
+}
+
+.logo-policia-back {
+    position: absolute;
+    top: 130px;
+    left: 135px;
+}
+
+.logo-policia-back img {
+    height: 50px;
+    width: 50px;
+    margin: 15px 00px 00px 5px;
+    border-radius: 7px;
+}
+
+
+.signature {
+    text-align: center;
+    position: relative;
+    top: 220px;
+    left: 10px;
+    font-size: 6px;
+}
+
+.signature img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+}
+
+ .president-name {
+    text-align: center;
+    position: relative;
+
+    top: 195px;
+    font-size: 6px;
+}
+.president-name p{
+    margin: 0;
+    font-weight: bolder;
+}
+
+.advice {
+    position: absolute;
+    text-align: center;
+    top: 288px;
+    left: 40px;
+    font-size: 5.5px;
+    color: white;
+    width: 130px;
+    font-weight: bold;
+}

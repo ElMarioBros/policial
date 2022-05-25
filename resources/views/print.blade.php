@@ -156,7 +156,7 @@
                 <div class="d-flex bd-highlight align-items-center">
 
                     <div class="flex-fill box-b">
-                        <img class="agent-picture" src="https://via.placeholder.com/200x250">
+                        <img class="agent-picture" src="{{ asset($agente->imagen) }}">
                     </div>
                     <div class="flex-fill box-b">
                         <div class="info-div">

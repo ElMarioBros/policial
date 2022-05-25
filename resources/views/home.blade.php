@@ -54,6 +54,9 @@
                                     <a class="btn btn-success" href="{{ url("upload/$agente->id") }}">
                                         <i class="fa fa-fw fa-camera"></i>
                                     </a>
+                                    <a class="btn btn-warning" href="{{ url("edit/$agente->id") }}">
+                                        <i class="far fa-fw fa-address-card"></i>
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach

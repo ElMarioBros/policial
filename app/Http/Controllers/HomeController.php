@@ -80,11 +80,40 @@ class HomeController extends Controller
             'file'=>'required|image'
         ]);
         $agente = Agentes::find($request->id);
+        $image = $request->file('file');
+        $destinationPath = 'img/';
+        $filename = $request->id.'-'.time().'.'.$image->extension();
+        $uploadSuccess = $request->file('file')->move($destinationPath,$filename);
 
-        $agente->imagen = $request->file('file')->store('');;
+        $agente->imagen = $destinationPath . $filename;
         
         $agente->save();
-        return $agente->imagen;
+        return redirect()->route("credential","$request->id")->with('success','Imagen ingresada exitosamente. ');
+    }
+
+    public function editView($id)
+    {
+        $agente = Agentes::find($id);
+        return view('edit',['agente'=>$agente]);
+    }
+
+    public function editAgent(Request $request, $id)
+    {
+
+        $agente = Agentes::find($id);
+        $agente->nomina = $request->nomina;
+        $agente->cuip = $request->cuip;
+        $agente->cargo =$request->cargo;
+        $agente->nombre = $request->nombre;
+        $agente->asignacion = $request->asignacion;
+        $agente->ingreso = $request->ingreso;
+        $agente->nds = $request->nds;
+        $agente->curp = $request->curp;
+        $agente->telefonos = $request->telefonos;
+
+        $agente->save();
+
+        return redirect()->route('home')->with('success','Agente registrado exitosamente. ');
     }
 
 }
