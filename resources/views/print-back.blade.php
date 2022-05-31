@@ -68,8 +68,8 @@
 </section>
 <script>
         window.print();
-        window.location.href = "https://raut.cc/";
-        //window.location.href = "http://127.0.0.1:8000/";
+        //window.location.href = "https://raut.cc/";
+        window.location.href = "http://127.0.0.1:8000/";
     </script>
 </body>
 </html>

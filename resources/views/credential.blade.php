@@ -79,7 +79,7 @@
                                   </div>
               
                                   <div class="ename">
-                                      <p><b>{{ $agente->nombre }}</b></p>
+                                      <p class="agent-name" ><b>{{ $agente->nombre }}</b></p>
                                       <div class="nomina">
                                           <span>N.Nomina</span><br>
                                           <span>{{ $agente->nomina }}</span>

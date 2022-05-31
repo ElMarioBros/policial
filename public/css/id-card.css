@@ -70,6 +70,10 @@
     font-size: 7px;
 }
 
+.ename .agent-name{
+    max-width: 66%;
+}
+
 .logo-policia {
     position: absolute;
     top: 170px;
