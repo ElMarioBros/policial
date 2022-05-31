@@ -44,9 +44,9 @@
                 <div class="signature">
                     <img style="transform: translate(-4%);" src="{{ asset('assets/signature-example.png') }}" alt="">
                     <hr style="
-                        height: 0.1em;
+                        height: .2em;
                         width: 50%;
-                        transform: translate(-9%,-12px);
+                        transform: translate(40%,-12px);
                         border-width: 0;
                         color: black;
                         background-color: black;
@@ -68,8 +68,8 @@
 </section>
 <script>
         window.print();
-        //window.location.href = "https://raut.cc/";
-        window.location.href = "http://127.0.0.1:8000/";
+        window.location.href = "https://raut.cc/";
+        //window.location.href = "http://127.0.0.1:8000/";
     </script>
 </body>
 </html>
