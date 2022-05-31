@@ -25,6 +25,7 @@ Route::controller(HomeController::class)->group(function(){
     })->name('store');
     Route::post('/store', 'store')->name('store-agent');
     Route::get('/print/{id}', 'print')->name('print');
+    Route::get('/print-back/{id}', 'printBack')->name('print-back');
     Route::get('/credential/{id}',  'credential')->name('credential');
     Route::get('/upload/{id}', 'upload')->name('upload-index');
     Route::post('/save', 'saveImage')->name('upload-image');

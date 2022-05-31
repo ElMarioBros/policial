@@ -47,6 +47,12 @@ class HomeController extends Controller
         return view('print',['agente'=>$agente]);
     }
 
+    public function printBack($id)
+    {
+        $agente = Agentes::find($id);
+        return view('print-back',['agente'=>$agente]);
+    }
+
     public function store(Request $request)
     {
 
