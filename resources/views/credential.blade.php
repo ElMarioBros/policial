@@ -157,6 +157,14 @@
               <!-- END ID CARD BACK -->
             </div>
         </div>
+        <div class="row w-25">
+            <div class="card">
+                <div class="card-header"><h4>Beneficiarios</h4></div>
+                <div class="card-body">
+                    {{ $agente->beneficiarios }}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
