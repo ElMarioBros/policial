@@ -20,7 +20,7 @@
     }
 
     .team-boxed .people {
-    padding:50px 0;
+    padding:8px 0 35px 0;
     }
 
 </style>
@@ -35,6 +35,10 @@
         <a href="{{ url("print/$agente->id") }}" class="btn btn-primary">Imprimir Credencial (Frente) <i class="fa fa-fw fa-print"></i></a>
         <a href="{{ url("print-back/$agente->id") }}" class="btn btn-primary">Imprimir Credencial (Reverso) <i class="fa fa-fw fa-print"></i></a>
         <a href="{{ url("upload/$agente->id") }}" class="btn btn-success">Asignar Imagen <i class="fa fa-fw fa-camera"></i></a>
+        <a href="{{ url("upload/$agente->id") }}" class="btn btn-warning">Asignar Imagen <i class="far fa-fw fa-address-card"></i></a>
+        <div class="mt-4">
+            <h4>{{ $agente->nombre }}</h4>
+        </div>
         <div class="row people">
             <div class="item">
               <!-- START ID CARD -->
@@ -159,7 +163,7 @@
         </div>
         <div class="row w-25">
             <div class="card">
-                <div class="card-header"><h4>Beneficiarios</h4></div>
+                <div class="card-header"><h5>Beneficiarios</h5></div>
                 <div class="card-body">
                     {{ $agente->beneficiarios }}
                 </div>

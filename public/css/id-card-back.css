@@ -38,13 +38,13 @@
 .logo-policia-back {
     position: absolute;
     top: 130px;
-    left: 135px;
+    left: 125px;
 }
 
 .logo-policia-back img {
-    height: 50px;
-    width: 50px;
-    margin: 15px 00px 00px 5px;
+    height: 60px;
+    width: 60px;
+    margin: 18px 00px 00px 5px;
     border-radius: 7px;
 }
 

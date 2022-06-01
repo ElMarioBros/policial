@@ -77,13 +77,13 @@
 .logo-policia {
     position: absolute;
     top: 170px;
-    left: 135px;
+    left: 128px;
 }
 
 .logo-policia img {
-    height: 50px;
-    width: 50px;
-    margin: 15px 00px 00px 5px;
+    height: 60px;
+    width: 60px;
+    margin: 20px 00px 00px 5px;
     border-radius: 7px;
 }
 
