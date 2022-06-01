@@ -35,7 +35,7 @@
         <a href="{{ url("print/$agente->id") }}" class="btn btn-primary">Imprimir Credencial (Frente) <i class="fa fa-fw fa-print"></i></a>
         <a href="{{ url("print-back/$agente->id") }}" class="btn btn-primary">Imprimir Credencial (Reverso) <i class="fa fa-fw fa-print"></i></a>
         <a href="{{ url("upload/$agente->id") }}" class="btn btn-success">Asignar Imagen <i class="fa fa-fw fa-camera"></i></a>
-        <a href="{{ url("upload/$agente->id") }}" class="btn btn-warning">Asignar Imagen <i class="far fa-fw fa-address-card"></i></a>
+        <a href="{{ url("upload/$agente->id") }}" class="btn btn-warning">Editar datos <i class="far fa-fw fa-address-card"></i></a>
         <div class="mt-4">
             <h4>{{ $agente->nombre }}</h4>
         </div>
