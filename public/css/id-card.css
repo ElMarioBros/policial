@@ -48,7 +48,7 @@
     top: 75px;
     left: 115px;
     color: black;
-    font-size: 6px;
+    font-size: 7.5px;
 }
 
 .edetails p{
@@ -67,7 +67,7 @@
 }
 
 .ename .nomina{
-    font-size: 7px;
+    font-size: 8px;
 }
 
 .ename .agent-name{
@@ -81,9 +81,9 @@
 }
 
 .logo-policia img {
-    height: 60px;
-    width: 60px;
-    margin: 20px 00px 00px 5px;
+    height: 55px;
+    width: 55px;
+    margin: 25px 00px 00px 10px;
     border-radius: 7px;
 }
 
@@ -107,7 +107,7 @@
 
 .eslogan {
     position: absolute;
-    top: 278px;
+    top: 268px;
     left: 30px;
     font-size: 7px;
     width: 70px;
