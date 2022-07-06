@@ -57,16 +57,17 @@ class HomeController extends Controller
     {
 
         $agente = new Agentes;
-        $agente->nomina = $request->nomina;
-        $agente->cuip = $request->cuip;
-        $agente->cargo =$request->cargo;
+        
+        $agente->nomina = $request->nomina ? $request->nomina : ' ';        
+        $agente->cuip = $request->cuip ? $request->cuip : ' ';
+        $agente->cargo =$request->cargo ? $request->cargo : ' ';
         $agente->nombre = $request->nombre;
-        $agente->asignacion = $request->asignacion;
-        $agente->ingreso = $request->ingreso;
-        $agente->nds = $request->nds;
-        $agente->curp = $request->curp;
-        $agente->telefonos = $request->telefonos;
-        $agente->beneficiarios = $request->beneficiarios;
+        $agente->asignacion = $request->asignacion ? $request->asignacion : ' ';
+        $agente->ingreso = $request->ingreso ? $request->ingreso : ' ';
+        $agente->nds = $request->nds ? $request->nds : ' ';
+        $agente->curp = $request->curp ? $request->curp : ' ';
+        $agente->telefonos = $request->telefonos ? $request->telefonos : ' ';
+        $agente->beneficiarios = $request->beneficiarios ? $request->beneficiarios : ' ';
 
         $agente->save();
 

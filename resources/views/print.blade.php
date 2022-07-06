@@ -31,7 +31,7 @@
                     CALIFORNIA A.C.</b>
                     <div class="org-dir">
                         <span>Calle Sur s/n col. Bella Vista parte posterior</span><br>
-                        <span>del C.E.R.E.S.O. Tel. 218 05 76</span>
+                        <span>del C.E.R.E.S.O. Tel. 686 2401 073</span>
                     </div>
                 </div>
             </div>
@@ -48,11 +48,11 @@
             <div class="">
 
                 <div class="edetails">
-                    <p class="header">Cargo | Position</p>
+                    <p class="header">Cargo</p>
                     <p><b>{{ $agente->cargo }}</b></p>
-                    <p class="header">Sección | Section</p>
+                    <p class="header">Sección</p>
                     <p><b>{{ $agente->asignacion }}</b></p>
-                    <p class="header">NSS | Social Security</p>
+                    <p class="header">NSS</p>
                     <p><b>{{ $agente->nds }}</b></p>
                     <p class="header">CURP</p>
                     <p><b>{{ $agente->curp }}</b></p>

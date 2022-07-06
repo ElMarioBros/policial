@@ -55,12 +55,12 @@
     color: #000;
     text-align: left;
     display: block;
-    margin: 2px;
+    margin: 0.5px 1px;
 }
 
 .ename {
     position: absolute;
-    top: 190px;
+    top: 185px;
     margin-left: 25px;
     font-size: 11px;
     text-align: left;
