@@ -34,7 +34,7 @@
         @endif
         <a href="{{ url("print/$agente->id") }}" class="btn btn-primary">Imprimir Credencial <i class="fa fa-fw fa-print"></i></a>
         <a href="{{ url("upload/$agente->id") }}" class="btn btn-success">Asignar Imagen <i class="fa fa-fw fa-camera"></i></a>
-        <a href="{{ url("upload/$agente->id") }}" class="btn btn-warning">Editar datos <i class="far fa-fw fa-address-card"></i></a>
+        <a href="{{ url("edit/$agente->id") }}" class="btn btn-warning">Editar datos <i class="far fa-fw fa-address-card"></i></a>
         <div class="mt-4">
             <h4>{{ $agente->nombre }}</h4>
         </div>
