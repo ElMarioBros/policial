@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="signature">
-                    <img style="transform: translate(-4%);" src="{{ asset('assets/signature-example.png') }}" alt="">
+                    <img style="transform: translate(-10%,-15%);" src="{{ asset('assets/signature-example.png') }}" alt="">
                     <hr style="
                         height: .2em;
                         width: 50%;
