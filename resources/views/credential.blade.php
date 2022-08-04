@@ -133,7 +133,11 @@
                                 </div>
             
                                 <div class="signature">
+<<<<<<< HEAD
                                     <img style="transform: translate(-10%,10%);" src="{{ asset('assets/signature-example.png') }}" alt="">
+=======
+                                    <img style="transform: translate(-10%,-15%);" src="{{ asset('assets/signature-example.png') }}" alt="">
+>>>>>>> 9bfeae027bb3c29e2f6ff77ba4e5afc08d5138d6
                                     <hr style="
                                         height: 0.1em;
                                         width: 50%;
