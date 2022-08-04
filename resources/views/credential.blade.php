@@ -69,11 +69,11 @@
                               <div class="">
               
                                   <div class="edetails">
-                                      <p class="header">Cargo | Position</p>
+                                      <p class="header">Cargo</p>
                                       <p><b>{{ $agente->cargo }}</b></p>
-                                      <p class="header">Sección | Section</p>
+                                      <p class="header">Estatus</p>
                                       <p><b>{{ $agente->asignacion }}</b></p>
-                                      <p class="header">NSS | Social Security</p>
+                                      <p class="header">NSS</p>
                                       <p><b>{{ $agente->nds }}</b></p>
                                       <p class="header">CURP</p>
                                       <p><b>{{ $agente->curp }}</b></p>
@@ -133,7 +133,7 @@
                                 </div>
             
                                 <div class="signature">
-                                    <img style="transform: translate(-4%);" src="{{ asset('assets/signature-example.png') }}" alt="">
+                                    <img style="transform: translate(-10%,10%);" src="{{ asset('assets/signature-example.png') }}" alt="">
                                     <hr style="
                                         height: 0.1em;
                                         width: 50%;

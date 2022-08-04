@@ -117,6 +117,7 @@ class HomeController extends Controller
         $agente->nds = $request->nds;
         $agente->curp = $request->curp;
         $agente->telefonos = $request->telefonos;
+        $agente->beneficiarios = $request->beneficiarios;
 
         $agente->save();
 

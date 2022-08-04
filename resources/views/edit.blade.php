@@ -31,7 +31,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="asignacion" class="form-label">Asignación</label>
+            <label for="asignacion" class="form-label">Estatus</label>
             <input type="text" class="form-control" id="asignacion" name="asignacion" value="{{ $agente->asignacion }}">
         </div>
 
@@ -51,6 +51,10 @@
         <div class="mb-3">
             <label for="telefono" class="form-label">Telefono</label>
             <input type="text" class="form-control" id="telefono" name="telefonos" value="{{ $agente->telefonos }}">
+        </div>
+        <div class="mb-3">
+            <label for="beneficiarios" class="form-label">Beneficiarios</label>
+            <textarea class="form-control" id="beneficiarios" name="beneficiarios">{{ $agente->beneficiarios }}</textarea>
         </div>
 
         <div class="mb-3">

@@ -36,7 +36,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="asignacion" class="form-label">Asignación</label>
+            <label for="asignacion" class="form-label">Estatus</label>
             <input type="text" class="form-control" id="asignacion" name="asignacion">
         </div>
 
