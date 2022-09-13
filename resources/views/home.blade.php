@@ -25,6 +25,7 @@
                 <table id="agentes" class="table table-bordered table-striped">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Nómina</th>
                             <th>CUIP</th>
                             <th>Nombre</th>
@@ -39,6 +40,11 @@
                     <tbody>
                         @foreach ($agentes as $agente)
                             <tr>
+                                @if (strlen($agente->imagen)>1)
+                                    <td ><img class="rounded" width="100px" src="{{ asset($agente->imagen) }}"></td>
+                                @else
+                                    <td></td>
+                                @endif
                                 <td>{{ $agente->nomina }}</td>
                                 <td>{{ $agente->cuip }}</td>
                                 <td>{{ $agente->nombre }}</td>
@@ -63,6 +69,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
+                            <th></th>
                             <th>Nómina</th>
                             <th>CUIP</th>
                             <th>Nombre</th>
