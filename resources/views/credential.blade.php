@@ -45,7 +45,7 @@
                 <div class="card">
                 <div class="card-body">
                     <div class="d-flex flex-column align-items-center text-center">
-                    <img src="{{ asset($agente->imagen) }}" alt="{{ $agente->nombre }}" class="rounded-circle" width="150">
+                    <img src="{{ asset($agente->imagen) }}" alt="{{ $agente->nombre }}" class="rounded" width="150">
                     <div class="mt-3">
                         <h4>{{ $agente->nombre }}</h4>
                         <p class="text-bold mb-1">{{ $agente->cargo }}</p>
