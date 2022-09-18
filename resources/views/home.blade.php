@@ -26,13 +26,11 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Nómina</th>
-                            <th>CUIP</th>
-                            <th>Nombre</th>
-                            <th>Asignación</th>
-                            <th>Ingreso</th>
-                            <th>CURP</th>
                             <th>Cargo</th>
+                            <th>Estado</th>
+                            <th>Nombre</th>
+                            <th>Nómina</th>
+                            <th>Ingreso</th>
                             <th>Telefonos</th>
                             <th>Acciones</th>
                         </tr>
@@ -45,13 +43,11 @@
                                 @else
                                     <td></td>
                                 @endif
-                                <td>{{ $agente->nomina }}</td>
-                                <td>{{ $agente->cuip }}</td>
-                                <td>{{ $agente->nombre }}</td>
+                                <td>{{ $agente->cargo }}</td>
                                 <td>{{ $agente->asignacion }}</td>
+                                <td>{{ $agente->nombre }}</td>
+                                <td>{{ $agente->nomina }}</td>
                                 <td>{{ $agente->ingreso }}</td>
-                                <td>{{ $agente->curp }}</td>
-                                <th>{{ $agente->cargo }}</th>
                                 <td>{{ $agente->telefonos }}</td>
                                 <td>
                                     <a class="btn btn-primary" href="{{ url("credential/$agente->id") }}">
@@ -70,13 +66,11 @@
                     <tfoot>
                         <tr>
                             <th></th>
-                            <th>Nómina</th>
-                            <th>CUIP</th>
-                            <th>Nombre</th>
-                            <th>Asignación</th>
-                            <th>Ingreso</th>
-                            <th>CURP</th>
                             <th>Cargo</th>
+                            <th>Estado</th>
+                            <th>Nombre</th>
+                            <th>Nómina</th>
+                            <th>Ingreso</th>
                             <th>Telefonos</th>
                             <th>Acciones</th>
                         </tr>

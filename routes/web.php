@@ -31,6 +31,8 @@ Route::controller(HomeController::class)->group(function(){
     Route::post('/save', 'saveImage')->name('upload-image');
     Route::get('/edit/{id}', 'editView')->name('edit-index');
     Route::post('/edit/{id}', 'editAgent')->name('edit-agent');
+    Route::get('/delete/{id}','deleteView')->name('delete-index');
+    Route::post('/delete/{id}','deleteAgent')->name('delete-agent');
 });
 
 /*

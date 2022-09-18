@@ -124,4 +124,18 @@ class HomeController extends Controller
         return redirect()->route('home')->with('success','Agente registrado exitosamente. ');
     }
 
+    public function deleteView($id)
+    {
+        $agente = Agentes::find($id);
+        return view('delete',['agente'=>$agente]);
+    }
+
+    public function deleteAgent($id)
+    {
+        $agente = Agentes::find($id);
+        $agente->delete();
+        return view('delete-success',['agente'=>$agente]);
+    }
+
+
 }
