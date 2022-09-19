@@ -65,7 +65,7 @@
                         <div class="col-sm-3">
                         <h6 class="mb-0">Nombre</h6>
                         </div>
-                        <div class="col-sm-6 text-secondary">
+                        <div class="col-sm-9 text-secondary">
                         {{ $agente->nombre }}
                         </div>
                     </div>

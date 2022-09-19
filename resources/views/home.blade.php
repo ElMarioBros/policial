@@ -26,12 +26,10 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Cargo</th>
-                            <th>Estado</th>
-                            <th>Nombre</th>
                             <th>Nómina</th>
-                            <th>Ingreso</th>
-                            <th>Telefonos</th>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Cargo</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -43,12 +41,10 @@
                                 @else
                                     <td></td>
                                 @endif
-                                <td>{{ $agente->cargo }}</td>
-                                <td>{{ $agente->asignacion }}</td>
-                                <td>{{ $agente->nombre }}</td>
                                 <td>{{ $agente->nomina }}</td>
-                                <td>{{ $agente->ingreso }}</td>
-                                <td>{{ $agente->telefonos }}</td>
+                                <td>{{ $agente->nombre }}</td>
+                                <td>{{ $agente->asignacion }}</td>
+                                <td>{{ $agente->cargo }}</td>
                                 <td>
                                     <a class="btn btn-primary" href="{{ url("credential/$agente->id") }}">
                                         <i class="far fa-fw fa-id-badge"></i>
@@ -66,12 +62,10 @@
                     <tfoot>
                         <tr>
                             <th></th>
-                            <th>Cargo</th>
-                            <th>Estado</th>
-                            <th>Nombre</th>
                             <th>Nómina</th>
-                            <th>Ingreso</th>
-                            <th>Telefonos</th>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Cargo</th>
                             <th>Acciones</th>
                         </tr>
                     </tfoot>
