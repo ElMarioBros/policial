@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
 use App\Models\Agentes;
 
@@ -87,12 +88,10 @@ class HomeController extends Controller
             'file'=>'required|image'
         ]);
         $agente = Agentes::find($request->id);
-        $image = $request->file('file');
-        $destinationPath = 'img/';
-        $filename = $request->id.'-'.time().'.'.$image->extension();
-        $uploadSuccess = $request->file('file')->move($destinationPath,$filename);
 
-        $agente->imagen = $destinationPath . $filename;
+        $imageCloud = $request->file('file')->storeOnCloudinary('imagenes-fraternidad');
+
+        $agente->imagen = $imageCloud->getPath();
         
         $agente->save();
         return redirect()->route("credential","$request->id")->with('success','Imagen ingresada exitosamente. ');
