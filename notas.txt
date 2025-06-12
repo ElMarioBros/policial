@@ -1,3 +1,0 @@
-::config/database.php
-    myslq{'strict'=> ``true->false`` }
-    ### ESTO HACE QUE AL HACER UN REGISTRO NO TODOS LOS CAMPOS NECESITEN LLENARSE PARA QUE LO ACEPTE
